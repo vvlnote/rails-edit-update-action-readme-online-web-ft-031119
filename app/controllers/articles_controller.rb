@@ -26,6 +26,6 @@ class ArticlesController < ApplicationController
   
   def update
     raise params.inspect
-    
+    @article = Article.find(params[:id])
   end
 end
